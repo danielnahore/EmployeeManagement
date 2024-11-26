@@ -1,0 +1,12 @@
+﻿@page "/databindingdescription"
+@inherits DatabindingDescriptionBase
+
+<h3>DatabindingDescription</h3>
+
+<div>
+    <textarea @bind="Description" @bind:event="oninput" style="width:500px"/>
+</div>
+
+<div>
+    Count : @Description.Length
+</div>
